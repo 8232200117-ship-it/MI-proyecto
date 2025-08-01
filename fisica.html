@@ -1,62 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicación PWA</title>
+    <title>Mi Proyecto - Física</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="manifest" href="manifest.json">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(reg => console.log('Service Worker registrado', reg))
-          .catch(err => console.log('Error al registrar el Service Worker', err));
-      });
-    }
-  </script>
-  </head>
+</head>
 <body>
-  <nav class="navbar navbar-expand-lg custom-navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand custom-text" href="index.html"><img src="ternurin.png" height="50px" width="50px" ></img></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Mate</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Física</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Programación</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#">Electrónica</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Comedia
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item custom-text" href="#">Standup</a></li>
-            <li><a class="dropdown-item custom-text" href="#">YouTube</a></li>
-            <li><a class="dropdown-item custom-text" href="#">TikTok</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    <center><h1>Física</h1><br>
-    <img src="fisica.jpeg" height="400px" width="300px"></img></center>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mate.html">Matemáticas</a></li>
+                <li><a href="fisica.html">Física</a></li>
+                <li><a href="programacion.html">Programación</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="pasatiempo.html">Pasatiempo</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Física</h1>
+        <p>
+            La física no es solo una ciencia, es la llave para entender el lenguaje del universo. Desde las leyes de Newton hasta la mecánica cuántica, me apasiona desentrañar los secretos que rigen todo lo que nos rodea. Es aquí donde la teoría se encuentra con la realidad, y cada experimento es una conversación con el cosmos.
+        </p>
+        <img src="fisica.jpg" alt="Imagen de física">
+    </main>
+    
 </body>
 </html>

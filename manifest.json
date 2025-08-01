@@ -1,19 +1,14 @@
 {
-  "name": "Ternurin App",
-  "short_name": "Tenurin App",
+  "name": "Mi Proyecto de Clase",
+  "short_name": "Mi Proyecto",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#00d6ee",
+  "background_color": "#ffffff",
+  "theme_color": "#333333",
   "icons": [
     {
-      "src": "ternurin-192.png",
+      "src": "index.png",
       "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "ternurin-512.png",
-      "sizes": "512x512",
       "type": "image/png"
     }
   ]

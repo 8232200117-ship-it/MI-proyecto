@@ -1,20 +1,34 @@
+const CACHE_NAME = 'mi-sitio-cache-v1';
+const urlsToCache = [
+  '/',
+  '/index.html',
+  '/estilos.css',
+  '/mate.html',
+  '/fisica.html',
+  '/programacion.html',
+  '/musica.html',
+  '/pasatiempo.html',
+  '/cv.html'
+];
+
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open('mi-pwa-cache').then(cache => {
-      return cache.addAll([
-        '/',
-        'index.html',
-        'fisica.html',
-        'fisica.jpeg'
-      ]);
-    })
+    caches.open(CACHE_NAME)
+      .then(cache => {
+        console.log('Cache abierto');
+        return cache.addAll(urlsToCache);
+      })
   );
-  console.log('Service Worker instalado');
 });
 
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request)
-      .then(respuesta => respuesta || fetch(event.request))
+      .then(response => {
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
+      })
   );
 });
