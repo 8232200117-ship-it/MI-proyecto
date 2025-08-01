@@ -8,7 +8,12 @@ const urlsToCache = [
   '/programacion.html',
   '/musica.html',
   '/pasatiempo.html',
-  '/cv.html'
+  '/cv.html',
+  '/index.png',
+  '/fisica.jpg',
+  '/mate.jpg',
+  '/musica.jpg',
+  '/programacion.jpg'
 ];
 
 self.addEventListener('install', event => {
